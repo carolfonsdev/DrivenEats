@@ -1,0 +1,353 @@
+body{
+    width: 100vw;
+    height: 100%;
+    background-color: #eeeeee;
+    position: absolute;
+}
+
+.topo{
+    width: 414vw;
+    height: 92px;
+    background-color: #CF2B2B;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.topo h1{
+    font-family: Righteous;
+    font-size: 44px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-left: 21px;
+    margin-top: 10px;
+}
+
+.topo h2{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 2px;
+    margin-left: 21px;
+}
+
+.menu{
+    width: 100vw;
+    margin-left: 19px;
+    margin-top: 120px;
+}
+
+.escolha{
+    width: 250px;
+    height: 25px;
+}
+
+.escolha h1{
+    font-family: Righteous;
+    font-size: 26px;
+    font-weight: 400;
+    color: black;
+}
+
+.comida{
+    width: auto;
+    height: 240px;
+    overflow: scroll;
+    display: flex;
+    margin-top: 13px;
+}
+
+.comidas{
+    cursor: pointer;
+    flex: 0 0 auto;
+    width: 172px;
+    height: 216px;
+    background-color: white;
+    border-radius: 9px;
+    margin-right: 17px;
+    box-shadow: 0px 0px 10px -4px #00000040;
+}
+
+.borda{
+    border: solid green;
+}
+
+.comidas img{
+    width: 144px;
+    height: 87px;
+    border-radius: 9px;
+    margin-top: 18px;
+    margin-left: 14px;
+}
+
+.comidas h1{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 14px;
+    margin-top: 10px;
+}
+
+.comidas h2{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+    margin-left: 14px;
+    margin-top: 12px;
+}
+
+.comidas h3{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 13px;
+    margin-left: 14px;
+}
+
+.check{
+    background-color: green;
+    border-radius: 50px;
+    color: white;
+    margin-left: 145px;
+    display: flex;
+    justify-content: end;
+    display: none;
+}
+
+.bebida{
+    width: auto;
+    height: 230px;
+    overflow: scroll;
+    display: flex;
+    margin-top: 13px;
+}
+
+.bebidas{
+    cursor: pointer;
+    flex: 0 0 auto;
+    width: 172px;
+    height: 216px;
+    background-color: white;
+    border-radius: 9px;
+    margin-right: 17px;
+    box-shadow: 0px 0px 10px -4px #00000040;
+}
+
+.bebidas img{
+    width: 144px;
+    height: 87px;
+    border-radius: 9px;
+    margin-top: 18px;
+    margin-left: 14px;
+}
+
+.bebidas h1{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 14px;
+    margin-top: 10px;
+}
+
+.bebidas h2{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+    margin-left: 14px;
+    margin-top: 12px;
+}
+
+.bebidas h3{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 13px;
+    margin-left: 14px;
+}
+
+.sobremesa{
+    width: auto;
+    height: 340px;
+    overflow: scroll;
+    display: flex;
+    margin-top: 13px;
+    margin-bottom: 100px;
+}
+
+.sobremesas{
+    cursor: pointer;
+    flex: 0 0 auto;
+    width: 172px;
+    height: 216px;
+    background-color: white;
+    border-radius: 9px;
+    margin-right: 17px;
+    box-shadow: 0px 0px 10px -4px #00000040;
+}
+
+.sobremesas img{
+    width: 144px;
+    height: 87px;
+    border-radius: 9px;
+    margin-top: 18px;
+    margin-left: 14px;
+}
+
+.sobremesas h1{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 14px;
+    margin-top: 10px;
+}
+
+.sobremesas h2{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+    margin-left: 14px;
+    margin-top: 12px;
+}
+
+.sobremesas h3{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 13px;
+    margin-left: 14px;
+}
+
+.finalizar{
+    width: 100%;
+    height: 92px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clicar{
+    width: 364px;
+    height: 61px;
+    background-color: #A6A6A6;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    cursor: not-allowed
+}
+
+
+/* Após Interação */
+
+.habilitado{
+    cursor: pointer;
+    background-color: #32B72F;
+    color: white;
+}
+
+.finalizado{
+    display: none;
+}
+
+.confirmacao{
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirme{
+    width: 377px;
+    height: 360px;
+    background-color: #50D074;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.confirme h1{
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin-top: 15px;
+}
+
+.pedidos{
+    margin-top: 10px;
+    height: 130px;
+    width: 400px;
+    text-align: center;
+}
+
+.pedidos li{
+   margin-top: 20px;
+   font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+}
+
+.total{
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px;
+}
+
+.whatsapp{
+    width: 329px;
+    height: 52px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 700;
+    color: #50D074;
+    margin-top: 70px;
+}
+
+.cancelar{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+

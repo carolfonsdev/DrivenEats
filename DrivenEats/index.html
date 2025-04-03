@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>DrienEats</title>
+</head>
+<body>
+
+    <div class="topo">
+        <h1>DrivenEats</h1>
+        <h2>Sua comida em 6 minutos</h2>
+    </div>
+
+    <div class="menu">
+        <div class="escolha">
+            <h1>Primeiro, seu prato</h1>
+        </div>
+        <div class="comida">
+            <div class="comidas" onclick="selecionarComida(this)">
+                <img src="imagens/pf_frango.jpg" alt="prato frango">
+                <h1>Frango</h1>
+                <h2>Acompanha arroz, feijão e salada</h2>
+                <h3 class="preco">R$ 14,90</h3>
+                <ion-icon name="checkmark-circle-outline" class="check" style="margin-top: -15px;"></ion-icon>
+            </div>
+            <div class="comidas" onclick="selecionarComida(this)">
+                <img src="imagens/pf_carne.jpg" alt="prato carne">
+                <h1>Carne e ovo</h1>
+                <h2>Acompanha arroz, feijão e salada</h2>
+                <h3 class="preco">R$ 17,90</h3>
+                <ion-icon name="checkmark-circle-outline" class="check" style="margin-top: -15px;"></ion-icon>
+            </div>
+            <div class="comidas" onclick="selecionarComida(this)">
+                <img src="imagens/pf_calabresa.png" alt="calabresa">
+                <h1 style="text-align: center; margin-left: -2px;">Calabresa Acebolada</h1>
+                <h2>Acompanha arroz, feijão e salada</h2>
+                <h3 class="preco">R$ 16,90</h3>
+                <ion-icon name="checkmark-circle-outline" class="check" style="margin-top: -15px;"></ion-icon>
+            </div>
+        </div>
+
+        <div class="escolha">
+            <h1 style="margin-top: 27px;">Agora, sua bebida</h1>
+        </div>
+        <div class="bebida">
+            <div class="bebidas" onclick="selecionarBebida(this)">
+                <img src="imagens/coca.png" alt="Coca-cola">
+                <h1>Refrigerante</h1>
+                <h2>lata 350ml</h2>
+                <h3 class="preco">R$ 6,90</h3>
+                <ion-icon name="checkmark-circle-outline" class="check"></ion-icon>
+            </div>
+            <div class="bebidas" onclick="selecionarBebida(this)">
+                <img src="imagens/fanta.png" alt="fanta">
+                <h1>Fanta</h1>
+                <h2>lata 350ml</h2>
+                <h3 class="preco">R$ 4,90</h3>
+                <ion-icon name="checkmark-circle-outline" class="check"></ion-icon>
+            </div>
+            <div class="bebidas" onclick="selecionarBebida(this)">
+                <img src="imagens/suco.png" alt="suco">
+                <h1>Suco</h1>
+                <h2>500ml</h2>
+                <h3 class="preco">R$ 7,90</h3>
+                <ion-icon name="checkmark-circle-outline" class="check"></ion-icon>
+            </div>
+        </div>
+
+        <div class="escolha">
+            <h1 style="width: 320px; margin-top: 27px;">Por fim, sua sobremesa</h1>
+        </div>
+        <div class="sobremesa">
+            <div class="sobremesas" onclick="selecionarSobremesa(this)">
+                <img src="imagens/pudim.jpg" alt="pudim">
+                <h1>Pudim</h1>
+                <h2>Apenas um pudim</h2>
+                <h3 class="preco">R$ 7,90</h3>
+                <ion-icon name="checkmark-circle-outline" class="check"></ion-icon>
+            </div>
+            <div class="sobremesas" onclick="selecionarSobremesa(this)">
+                <img src="imagens/mouse.jpg" alt="mouse">
+                <h1>Mouse</h1>
+                <h2>Cremoso e gostoso</h2>
+                <h3 class="preco">R$ 6,90</h3>
+                <ion-icon name="checkmark-circle-outline" class="check"></ion-icon>
+            </div>
+            <div class="sobremesas" onclick="selecionarSobremesa(this)">
+                <img src="imagens/brownie.jpg" alt="brownie">
+                <h1>Brownie</h1>
+                <h2>É um bolinho</h2>
+                <h3 class="preco">R$ 4,90</h3>
+                <ion-icon name="checkmark-circle-outline" class="check"></ion-icon>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div class="finalizar">
+        <button class="clicar" onclick="fecharPedido()">Selecione os 3 itens <br> para fechar o pedido</button>
+    </div>
+
+    <div class="finalizado">
+        <div class="confirmacao">
+            <div class="confirme">
+                <h1>Confirme seu pedido</h1>
+                <ul class="pedidos"></ul>
+
+                <div class="total"><strong></strong></div>
+                <a href="" class="whatsapp" onclick="whatsappWeb()" >Tudo certo, pode pedir!</a>
+                <button class="cancelar" onclick="cancelarPedido()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
